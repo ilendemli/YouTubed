@@ -1,0 +1,17 @@
+Package: org.iLendSoft.YouTubed
+Name: YouTubed
+Version: 1.0-1
+Description: Enable backgrounding for YouTube.app
+Section: Tweaks
+Depends: firmware (>= 5.0), mobilesubstrate
+Conflicts: 
+Replaces:
+Priority: optional
+Architecture: iphoneos-arm
+Author: iLendSoft
+dev: Muhammet Ilendemli
+Homepage: http://ils.eu.gg
+Depiction: 
+Maintainer:
+Icon: 
+
