@@ -1,7 +1,7 @@
 Package: org.iLendSoft.YouTubed
 Name: YouTubed
-Version: 1.0-1
-Description: Enable backgrounding for YouTube.app
+Version: 1.1-1
+Description: enable audio backgrounding for YouTube app
 Section: Tweaks
 Depends: firmware (>= 5.0), mobilesubstrate
 Conflicts: 
