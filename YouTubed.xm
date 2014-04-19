@@ -1,6 +1,16 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "MediaSetter.h"
+#import "cutils.h"
+
+@interface YTVideo
+@property(readonly, assign, nonatomic) NSDictionary* thumbnailURLs;
+@property(readonly, assign, nonatomic) NSString* uploaderDisplayName;
+@property(readonly, assign, nonatomic) NSString* title;
+@property(readonly, assign, nonatomic) unsigned duration;
+@end
 
 //START BACKGROUNDING CODE
 
@@ -44,18 +54,36 @@ BOOL shouldPlay = FALSE;
  * if shouldPlay is FALSE it runs %orig, else nothing (fixes the delay)
  */
 -(void)pause {
-    if(!shouldPlay) { %orig; }
+    if(shouldPlay) {
+        
+    } else {
+        %orig;
+    }
 }
 %end
 
 //END BACKGROUNDING CODE
 
-//START REMOVING ADS CODE
+//START MEDIA INFORMATION CODE
 
-%hook YTVideo
--(BOOL)isMonetizedWithCountryCode:(id)country {
-    return FALSE; //muhahahah
+%hook MLVideo
+-(id)initWithID:(id)anId duration:(double)duration live:(BOOL)live liveDVREnabled:(BOOL)enabled streamManifest:(id)manifest {
+    [MediaSetter getMediaForVideoID:anId];
+    return %orig;
 }
 %end
 
-//END REMOVING ADS CODE
+%hook YTVideoDetailsActionsView
+-(void)setVideo:(YTVideo *)video userLike:(BOOL)like userDislike:(BOOL)dislike {
+    %orig;
+    
+    NSString *title = [video title];
+    NSString *uploader = [video uploaderDisplayName];
+    NSString *thumbnail = [[[[video thumbnailURLs] allValues] objectAtIndex:0] description];
+    NSInteger duration = [video duration];
+    
+    [MediaSetter setMediaWithTitle:title uploader:uploader duration:duration thumbnail:thumbnail];
+}
+%end
+
+//END MEDIA INFORMATION CODE
