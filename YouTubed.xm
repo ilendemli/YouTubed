@@ -5,7 +5,6 @@
 #import "MediaSetter.h"
 #import "cutils.h"
 
-#define installedAppListPath @"/private/var/mobile/Library/Caches/com.apple.mobile.installation.plist"
 //START BACKGROUNDING CODE
 
 BOOL shouldPlay = FALSE;
@@ -158,28 +157,17 @@ BOOL shouldPlay = FALSE;
 //END MEDIA INFORMATION CODE
 
 %ctor {
-    BOOL isDir = FALSE;
+    NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     
-    if([[NSFileManager defaultManager] fileExistsAtPath:installedAppListPath isDirectory:&isDir] && !isDir)  {
-        NSMutableDictionary *cacheDict = [NSDictionary dictionaryWithContentsOfFile:installedAppListPath];
+    %init(_ungrouped);
+    
+    if([version compare:@"2.5" options:NSNumericSearch] != NSOrderedAscending) {
+        %init(YT25);
         
-        NSDictionary *user = [cacheDict objectForKey:@"User"];
-        NSDictionary *youtube = [user objectForKey:@"com.google.ios.youtube"];
+    } else if([version compare:@"2.3" options:NSNumericSearch] != NSOrderedAscending) {
+        %init(YT23);
         
-        if(youtube) {
-            NSString *version = [youtube objectForKey:@"CFBundleShortVersionString"];
-            
-            %init(_ungrouped);
-            
-            if([version compare:@"2.5" options:NSNumericSearch] != NSOrderedAscending) {
-                %init(YT25);
-                
-            } else if([version compare:@"2.3" options:NSNumericSearch] != NSOrderedAscending) {
-                %init(YT23);
-                
-            } else {
-                %init(UNSUPPORTED);
-            }
-        }
+    } else {
+        %init(UNSUPPORTED);
     }
 }
