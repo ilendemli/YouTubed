@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BugFix</key>
-	<string></string>
+	<string>2</string>
 	<key>Major</key>
 	<string>1</string>
 	<key>Minor</key>
-	<string>3</string>
+	<string>6</string>
 	<key>PackageRevision</key>
 	<string>1</string>
 	<key>Stage</key>

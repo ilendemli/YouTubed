@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9438DF0C1996E443009256DB /* YouTubed-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9438DF071996E443009256DB /* YouTubed-Prefix.pch */; };
+		9438DF0D1996E443009256DB /* YouTubed.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9438DF081996E443009256DB /* YouTubed.mm */; };
+		949D938719961D7900936DEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D938619961D7900936DEF /* Foundation.framework */; };
+		949D93A4199626A700936DEF /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D93A3199626A700936DEF /* libsubstrate.dylib */; };
+		94F4F0CE199C9F0A00A3A1E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F4F0CD199C9F0A00A3A1E4 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9438DEFF1996E443009256DB /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		9438DF041996E443009256DB /* YouTubed.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubed.plist; sourceTree = "<group>"; };
+		9438DF061996E443009256DB /* PackageVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackageVersion.plist; path = YouTubed/PackageVersion.plist; sourceTree = SOURCE_ROOT; };
+		9438DF071996E443009256DB /* YouTubed-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YouTubed-Prefix.pch"; path = "YouTubed/YouTubed-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		9438DF081996E443009256DB /* YouTubed.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YouTubed.mm; path = YouTubed/YouTubed.mm; sourceTree = SOURCE_ROOT; };
+		9438DF091996E443009256DB /* YouTubed.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YouTubed.xm; path = YouTubed/YouTubed.xm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		949D938319961D7900936DEF /* YouTubed.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = YouTubed.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		949D938619961D7900936DEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		949D93A3199626A700936DEF /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		94F4F0CD199C9F0A00A3A1E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		949D937F19961D7900936DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F4F0CE199C9F0A00A3A1E4 /* UIKit.framework in Frameworks */,
+				949D93A4199626A700936DEF /* libsubstrate.dylib in Frameworks */,
+				949D938719961D7900936DEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9438DEFD1996E443009256DB /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				9438DEFE1996E443009256DB /* DEBIAN */,
+				9438DF001996E443009256DB /* Library */,
+			);
+			name = Package;
+			path = YouTubed/Package;
+			sourceTree = SOURCE_ROOT;
+		};
+		9438DEFE1996E443009256DB /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				9438DEFF1996E443009256DB /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		9438DF001996E443009256DB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9438DF011996E443009256DB /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		9438DF011996E443009256DB /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				9438DF021996E443009256DB /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		9438DF021996E443009256DB /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				9438DF041996E443009256DB /* YouTubed.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		949D937819961D7900936DEF = {
+			isa = PBXGroup;
+			children = (
+				949D938819961D7900936DEF /* YouTubed */,
+				949D938519961D7900936DEF /* Frameworks */,
+				949D938419961D7900936DEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		949D938419961D7900936DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				949D938319961D7900936DEF /* YouTubed.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		949D938519961D7900936DEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94F4F0CD199C9F0A00A3A1E4 /* UIKit.framework */,
+				949D93A3199626A700936DEF /* libsubstrate.dylib */,
+				949D938619961D7900936DEF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		949D938819961D7900936DEF /* YouTubed */ = {
+			isa = PBXGroup;
+			children = (
+				9438DF081996E443009256DB /* YouTubed.mm */,
+				9438DF091996E443009256DB /* YouTubed.xm */,
+				9438DF061996E443009256DB /* PackageVersion.plist */,
+				9438DF071996E443009256DB /* YouTubed-Prefix.pch */,
+				9438DEFD1996E443009256DB /* Package */,
+			);
+			name = YouTubed;
+			path = YTLog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		949D938019961D7900936DEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9438DF0C1996E443009256DB /* YouTubed-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		949D938219961D7900936DEF /* YouTubed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949D939919961D7900936DEF /* Build configuration list for PBXNativeTarget "YouTubed" */;
+			buildPhases = (
+				949D937D19961D7900936DEF /* ShellScript */,
+				949D937E19961D7900936DEF /* Sources */,
+				949D937F19961D7900936DEF /* Frameworks */,
+				949D938019961D7900936DEF /* Headers */,
+				949D938119961D7900936DEF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTubed;
+			productName = YTLog;
+			productReference = 949D938319961D7900936DEF /* YouTubed.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		949D937919961D7900936DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 949D937C19961D7900936DEF /* Build configuration list for PBXProject "YouTubed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 949D937819961D7900936DEF;
+			productRefGroup = 949D938419961D7900936DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				949D938219961D7900936DEF /* YouTubed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		949D937D19961D7900936DEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		949D938119961D7900936DEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		949D937E19961D7900936DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9438DF0D1996E443009256DB /* YouTubed.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		949D939719961D7900936DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		949D939819961D7900936DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		949D939A19961D7900936DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouTubed/YouTubed-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+					"$(PROJECT_DIR)/YouTubed/Package/Library/MobileSubstrate/DynamicLibraries",
+				);
+				PRODUCT_NAME = YouTubed;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.120;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		949D939B19961D7900936DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouTubed/YouTubed-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+					"$(PROJECT_DIR)/YouTubed/Package/Library/MobileSubstrate/DynamicLibraries",
+				);
+				PRODUCT_NAME = YouTubed;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.120;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		949D937C19961D7900936DEF /* Build configuration list for PBXProject "YouTubed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949D939719961D7900936DEF /* Debug */,
+				949D939819961D7900936DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949D939919961D7900936DEF /* Build configuration list for PBXNativeTarget "YouTubed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949D939A19961D7900936DEF /* Debug */,
+				949D939B19961D7900936DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 949D937919961D7900936DEF /* Project object */;
+}

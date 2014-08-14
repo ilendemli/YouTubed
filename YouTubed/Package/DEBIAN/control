@@ -1,0 +1,17 @@
+Package: info.ilendemli.YouTubed
+Name: YouTubed
+Version: 1.6.2-1
+Description: Enable YouTube backgrounding
+Section: Tweaks
+Depends: firmware (>= 5.0), mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: ilendemli
+dev: Muhammet Ilendemli
+Homepage: http://ilendemli.info
+Depiction: 
+Maintainer: 
+Icon:
+
