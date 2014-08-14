@@ -4,6 +4,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @interface SpringBoard
 -(void)checkForYTApp;
 @end
@@ -13,7 +31,7 @@
 @class YTIPlayabilityStatus; @class MLPlayer; @class SpringBoard; 
 
 
-#line 10 "/Users/ilendemli/git/YouTubed/YouTubed/YouTubed.xm"
+#line 28 "/Users/ilendemli/git/YouTubed/YouTubed/YouTubed.xm"
 static void (*_logos_orig$YT$MLPlayer$setBackgroundPlaybackAllowed$)(MLPlayer*, SEL, BOOL); static void _logos_method$YT$MLPlayer$setBackgroundPlaybackAllowed$(MLPlayer*, SEL, BOOL); static BOOL (*_logos_orig$YT$YTIPlayabilityStatus$isPlayableInBackground)(YTIPlayabilityStatus*, SEL); static BOOL _logos_method$YT$YTIPlayabilityStatus$isPlayableInBackground(YTIPlayabilityStatus*, SEL); 
 
 
@@ -77,7 +95,7 @@ static void _logos_method$SB$SpringBoard$checkForYTApp(SpringBoard* self, SEL _c
 
 
 
-static __attribute__((constructor)) void _logosLocalCtor_75581c0b() {
+static __attribute__((constructor)) void _logosLocalCtor_a0d0ee7f() {
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
     
     if ([bundleID isEqualToString:@"com.apple.springboard"]) {
