@@ -7,7 +7,6 @@
 		<key>Bundles</key>
 		<array>
 			<string>com.google.ios.youtube</string>
-			<string>com.apple.springboard</string>
 		</array>
 	</dict>
 </dict>
