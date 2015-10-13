@@ -26,7 +26,7 @@
 
 #import "MediaSetter.h"
 
-%hook MLPlayer
+/*%hook MLPlayer
 
 -(void)setBackgroundPlaybackAllowed:(BOOL)allowed {
     %orig(TRUE);
@@ -38,6 +38,14 @@
 
 -(BOOL)isPlayableInBackground {
     return TRUE;
+}
+
+%end*/
+
+%hook MLAVPlayer
+
+-(void)setBackgroundPlaybackAllowed:(BOOL)allowed {
+	%orig(YES);
 }
 
 %end
