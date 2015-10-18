@@ -9,32 +9,22 @@
 /* Begin PBXBuildFile section */
 		949D938719961D7900936DEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D938619961D7900936DEF /* Foundation.framework */; };
 		949D93A4199626A700936DEF /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 949D93A3199626A700936DEF /* libsubstrate.dylib */; };
-		94A4285419A678E4006C8A43 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A4285319A678E4006C8A43 /* MediaPlayer.framework */; };
 		94A4286F19A67C5B006C8A43 /* YouTubed-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 94A4286B19A67C5A006C8A43 /* YouTubed-Prefix.pch */; };
 		94A4287019A67C5B006C8A43 /* YouTubed.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94A4286C19A67C5A006C8A43 /* YouTubed.mm */; };
-		94A4287319A67C6F006C8A43 /* MediaSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A4287119A67C6F006C8A43 /* MediaSetter.h */; };
-		94A4287419A67C6F006C8A43 /* MediaSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A4287219A67C6F006C8A43 /* MediaSetter.m */; };
-		94A4287719A67C89006C8A43 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A4287519A67C89006C8A43 /* XMLReader.h */; };
-		94A4287819A67C89006C8A43 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A4287619A67C89006C8A43 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		94F4F0CE199C9F0A00A3A1E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F4F0CD199C9F0A00A3A1E4 /* UIKit.framework */; };
+		94A5D5121BCED03F00735B21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A5D5111BCED03F00735B21 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		949D938319961D7900936DEF /* YouTubed.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = YouTubed.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		949D938619961D7900936DEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		949D93A3199626A700936DEF /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
-		94A4285319A678E4006C8A43 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		94A4286419A67C5A006C8A43 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		94A4286919A67C5A006C8A43 /* YouTubed.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouTubed.plist; sourceTree = "<group>"; };
 		94A4286A19A67C5A006C8A43 /* PackageVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		94A4286B19A67C5A006C8A43 /* YouTubed-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YouTubed-Prefix.pch"; sourceTree = "<group>"; };
 		94A4286C19A67C5A006C8A43 /* YouTubed.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YouTubed.mm; sourceTree = "<group>"; };
 		94A4286D19A67C5A006C8A43 /* YouTubed.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YouTubed.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		94A4287119A67C6F006C8A43 /* MediaSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaSetter.h; sourceTree = "<group>"; };
-		94A4287219A67C6F006C8A43 /* MediaSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaSetter.m; sourceTree = "<group>"; };
-		94A4287519A67C89006C8A43 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
-		94A4287619A67C89006C8A43 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
-		94F4F0CD199C9F0A00A3A1E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94A5D5111BCED03F00735B21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A4285419A678E4006C8A43 /* MediaPlayer.framework in Frameworks */,
-				94F4F0CE199C9F0A00A3A1E4 /* UIKit.framework in Frameworks */,
+				94A5D5121BCED03F00735B21 /* UIKit.framework in Frameworks */,
 				949D93A4199626A700936DEF /* libsubstrate.dylib in Frameworks */,
 				949D938719961D7900936DEF /* Foundation.framework in Frameworks */,
 			);
@@ -72,8 +61,7 @@
 		949D938519961D7900936DEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94A4285319A678E4006C8A43 /* MediaPlayer.framework */,
-				94F4F0CD199C9F0A00A3A1E4 /* UIKit.framework */,
+				94A5D5111BCED03F00735B21 /* UIKit.framework */,
 				949D93A3199626A700936DEF /* libsubstrate.dylib */,
 				949D938619961D7900936DEF /* Foundation.framework */,
 			);
@@ -83,10 +71,6 @@
 		94A4286119A67C5A006C8A43 /* YouTubed */ = {
 			isa = PBXGroup;
 			children = (
-				94A4287519A67C89006C8A43 /* XMLReader.h */,
-				94A4287619A67C89006C8A43 /* XMLReader.m */,
-				94A4287119A67C6F006C8A43 /* MediaSetter.h */,
-				94A4287219A67C6F006C8A43 /* MediaSetter.m */,
 				94A4286D19A67C5A006C8A43 /* YouTubed.xm */,
 				94A4286C19A67C5A006C8A43 /* YouTubed.mm */,
 				94A4286219A67C5A006C8A43 /* Package */,
@@ -144,8 +128,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A4287319A67C6F006C8A43 /* MediaSetter.h in Headers */,
-				94A4287719A67C89006C8A43 /* XMLReader.h in Headers */,
 				94A4286F19A67C5B006C8A43 /* YouTubed-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,8 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A4287019A67C5B006C8A43 /* YouTubed.mm in Sources */,
-				94A4287819A67C89006C8A43 /* XMLReader.m in Sources */,
-				94A4287419A67C6F006C8A43 /* MediaSetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +293,7 @@
 				PRODUCT_NAME = YouTubed;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.0.13;
+				iOSOpenDevDevice = 192.168.1.117;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
@@ -338,7 +318,7 @@
 				PRODUCT_NAME = YouTubed;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.0.13;
+				iOSOpenDevDevice = 192.168.1.117;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
