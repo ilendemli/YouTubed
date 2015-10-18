@@ -24,30 +24,32 @@
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#import "MediaSetter.h"
+// FOR NEW YT
+static UIScrollView *_tabTitlesView;
 
-%hook MLPlayer
-
--(void)setBackgroundPlaybackAllowed:(BOOL)allowed {
-    %orig(TRUE);
+%hook YTTabTitlesView
+- (struct CGSize)sizeThatFits:(struct CGSize)arg1 {
+    return CGSizeMake(arg1.width * 0.5, 0);
 }
 
+- (id)initWithLocator:(id)arg1 styleContext:(id)arg2 {
+    return _tabTitlesView = %orig();
+}
 %end
 
-%hook YTIPlayabilityStatus
-
--(BOOL)isPlayableInBackground {
+%hook YTLocalPlaybackController
+- (BOOL)backgroundPlaybackAllowed {
     return TRUE;
 }
 
+- (BOOL)isBackgroundPlaybackAllowedByUserSettings {
+    return TRUE;
+}
 %end
 
-%hook MLVideo
-
--(id)initWithID:(id)anId duration:(double)duration live:(BOOL)live liveDVREnabled:(BOOL)enabled streamManifest:(id)manifest {
-    [MediaSetter getMediaForVideoID:anId];
-    
-    return %orig;
+// FOR OLD YT
+%hook YTIPlayabilityStatus
+- (BOOL)isPlayableInBackground {
+    return TRUE;
 }
-
 %end
