@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9441106C1BD3AE17003606E9 /* PreferenceLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreferenceLoader; sourceTree = "<group>"; };
 		949D938319961D7900936DEF /* YouTubed.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = YouTubed.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		949D938619961D7900936DEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		949D93A3199626A700936DEF /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
@@ -25,6 +26,7 @@
 		94A4286C19A67C5A006C8A43 /* YouTubed.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YouTubed.mm; sourceTree = "<group>"; };
 		94A4286D19A67C5A006C8A43 /* YouTubed.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YouTubed.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		94A5D5111BCED03F00735B21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94E66F9F1BD3B6150019A56C /* Application Support */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Application Support"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,8 @@
 		94A4286519A67C5A006C8A43 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				94E66F9F1BD3B6150019A56C /* Application Support */,
+				9441106C1BD3AE17003606E9 /* PreferenceLoader */,
 				94A4286619A67C5A006C8A43 /* MobileSubstrate */,
 			);
 			path = Library;

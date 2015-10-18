@@ -25,16 +25,13 @@
  */
 
 // FOR NEW YT
-static UIScrollView *_tabTitlesView;
 
+%group GROUP_HIDE_TITLES
 %hook YTTabTitlesView
 - (struct CGSize)sizeThatFits:(struct CGSize)arg1 {
     return CGSizeMake(arg1.width * 0.5, 0);
 }
-
-- (id)initWithLocator:(id)arg1 styleContext:(id)arg2 {
-    return _tabTitlesView = %orig();
-}
+%end
 %end
 
 %hook YTLocalPlaybackController
@@ -53,3 +50,16 @@ static UIScrollView *_tabTitlesView;
     return TRUE;
 }
 %end
+
+%ctor {
+    %init();
+    
+    NSString *path = @"/var/mobile/Library/Preferences/info.ilendemli.youtubed.plist";
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    BOOL hideTitleView = [dict objectForKey:@"hideTitleView"] ? [[dict objectForKey:@"hideTitleView"] boolValue] : FALSE;
+    
+    if (hideTitleView == TRUE) {
+        %init(GROUP_HIDE_TITLES);
+    }
+}

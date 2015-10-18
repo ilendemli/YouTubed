@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>icon</key>
+		<string>/Library/Application Support/YouTubed/YouTubed@2x.png</string>
+		<key>label</key>
+		<string>YouTubed</string>
+		<key>default</key>
+		<false/>
+		<key>defaults</key>
+		<string>info.ilendemli.youtubed</string>
+		<key>key</key>
+		<string>hideTitleView</string>
+		<key>PostNotification</key>
+		<string>info.ilendemli.youtubed-preferenceChanged</string>
+	</dict>
+	<key>title</key>
+	<string>YouTubed</string>
+</dict>
+</plist>
